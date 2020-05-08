@@ -1,3 +1,9 @@
+<?php
+
+include 'functions.php';
+$pdo = pdo_connect_mysql();
+$msg = '';
+
 if (!empty($_POST)) {	
     $title = isset($_POST['title']) ? $_POST['title'] : '';
     $desc = isset($_POST['desc']) ? $_POST['desc'] : '';
